@@ -35,54 +35,54 @@ Welcome to the Flutter Email Viewer App repository! This Flutter application is 
 
 ## Project Structure
 
+```plaintext
 lib/
-├── app/
-│ ├── controllers/
-│ │ ├── screen_one_controller.dart
-│ │ ├── screen_two_controller.dart
-│ ├── bindings/
-│ │ ├── screen_one_binding.dart
-│ │ ├── screen_two_binding.dart
-│ ├── data/
-│ │ ├── models/
-│ │ │ ├── data_model.dart
-│ │ ├── repositories/
-│ ├── theme/
-│ │ ├── app_theme.dart
-│ │ ├── app_colors.dart
-│ │ ├── app_fonts.dart
-│ │ ├── app_styles.dart
-│ │ ├── app_values.dart
-│ ├── utils/
-│ │ ├── common_utils.dart
-│ ├── widgets/
-│ │ ├── custom_button.dart
-│ │ ├── custom_text_field.dart
-├── core/
-│ ├── managers/
-│ │ ├── string_manager.dart
-│ │ ├── asset_manager.dart
-│ │ ├── color_manager.dart
-│ │ ├── font_manager.dart
-│ │ ├── style_manager.dart
-│ │ ├── theme_manager.dart
-│ │ ├── values_manager.dart
-├── main.dart
-├── screens/
-│ ├── screen_one/
-│ │ ├── screen_one.dart
-│ │ ├── widgets/
-│ │ │ ├── screen_one_widget.dart
-│ │ ├── screen_one_controller.dart
-│ │ ├── bindings/
-│ │ │ ├── screen_one_binding.dart
-│ ├── screen_two/
-│ │ ├── screen_two.dart
-│ │ ├── widgets/
-│ │ │ ├── screen_two_widget.dart
-│ │ ├── screen_two_controller.dart
-│ │ ├── bindings/
-│ │ │ ├── screen_two_binding.dart
-├── routes/
-│ ├── app_pages.dart
-
+ ├── app/
+ │   ├── controllers/
+ │   │   ├── screen_one_controller.dart
+ │   │   ├── screen_two_controller.dart
+ │   ├── bindings/
+ │   │   ├── screen_one_binding.dart
+ │   │   ├── screen_two_binding.dart
+ │   ├── data/
+ │   │   ├── models/
+ │   │   │   ├── data_model.dart
+ │   │   ├── repositories/
+ │   ├── theme/
+ │   │   ├── app_theme.dart
+ │   │   ├── app_colors.dart
+ │   │   ├── app_fonts.dart
+ │   │   ├── app_styles.dart
+ │   │   ├── app_values.dart
+ │   ├── utils/
+ │   │   ├── common_utils.dart
+ │   ├── widgets/
+ │   │   ├── custom_button.dart
+ │   │   ├── custom_text_field.dart
+ ├── core/
+ │   ├── managers/
+ │   │   ├── string_manager.dart
+ │   │   ├── asset_manager.dart
+ │   │   ├── color_manager.dart
+ │   │   ├── font_manager.dart
+ │   │   ├── style_manager.dart
+ │   │   ├── theme_manager.dart
+ │   │   ├── values_manager.dart
+ ├── main.dart
+ ├── screens/
+ │   ├── screen_one/
+ │   │   ├── screen_one.dart
+ │   │   ├── widgets/
+ │   │   │   ├── screen_one_widget.dart
+ │   │   ├── screen_one_controller.dart
+ │   │   ├── bindings/
+ │   │   │   ├── screen_one_binding.dart
+ │   ├── screen_two/
+ │   │   ├── screen_two.dart
+ │   │   ├── widgets/
+ │   │   │   ├── screen_two_widget.dart
+ │   │   ├── screen_two_controller.dart
+ │   │   ├── bindings/
+ │   │   │   ├── screen_two_binding.dart
+ ├── routes/
+ │   ├── app_pages.dart
