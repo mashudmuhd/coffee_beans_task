@@ -1,5 +1,7 @@
-const String IMAGE_PATH= "assets/images";
+const String HTML_PATH= "assets/";
 class AssetManager{
-  static const String splashLogo = "$IMAGE_PATH/splash_logo.png";
+  static const String mailBodyOne = "$HTML_PATH/mailbody1.html";
+  static const String mailBodyTwo = "$HTML_PATH/mailbody2.html";
+  static const String mailBodythree = "$HTML_PATH/mailbody3.html";
 
 }

@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 class EmailBodyScreenBinding extends Bindings{
   @override
   void dependencies() {
-    Get.put<HomeScreenController>(HomeScreenController());
+    Get.lazyPut<HomeScreenController>(() => HomeScreenController());
   }
 
 }

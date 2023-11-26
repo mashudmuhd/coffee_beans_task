@@ -6,7 +6,7 @@ import 'package:coffee_beans_task/routes/app_pages/app_pages.dart';
 import 'package:coffee_beans_task/widgets/search_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../widgets/common_methods.dart';
+import '../../core/common_methods.dart';
 import '../../widgets/common_widget.dart';
 
 class HomeScreen extends GetView<HomeScreenController> {
@@ -18,7 +18,7 @@ class HomeScreen extends GetView<HomeScreenController> {
         appBar: const PreferredSize(
           preferredSize: Size.fromHeight(200.9),
           child: Padding(
-            padding: EdgeInsets.only(top: AppPadding.p20),
+            padding: EdgeInsets.only(top: AppPadding.p28),
             child: GmailSearchBar(),
           ),
         ),
@@ -42,10 +42,9 @@ class HomeScreen extends GetView<HomeScreenController> {
                 "date": date,
               };
 
-              final item = controller.emailBody[index];
 
               return Dismissible(
-                key: Key(item.toString()),
+                key: Key(emailBody),
                 background: Container(
                   color: ColorManager.primary,
                   alignment: Alignment.centerRight,
@@ -62,15 +61,13 @@ class HomeScreen extends GetView<HomeScreenController> {
                     children: [
                       Text(
                          splitNameEmail(email),
-                        style: controller.selectedItemIndex.value == index
-                            ? getBoldStyle()
-                            : getRegularStyle(),
+                        style:controller.isBold.value?getBoldStyle():getRegularStyle()
                       ),
-                      Text(content??'', style: getBoldStyle(),maxLines: 1,),
+                      Text(content??'', style: getBoldStyle(fontSize: AppSize.s14),maxLines: 1,),
                       Text(content??'',
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
-                        style: getRegularStyle(),
+                        style: getRegularStyle(fontSize: AppSize.s12),
                       ),
                     ],
                   ),
@@ -79,7 +76,7 @@ class HomeScreen extends GetView<HomeScreenController> {
                     children: [
                        Text(date??""),
                       const SizedBox(
-                          height: AppSize.s8), // Replace with your time logic
+                          height: AppSize.s8),
                       InkWell(
                         onTap: () {
                           controller.toggleStarIcon(index);
@@ -92,7 +89,9 @@ class HomeScreen extends GetView<HomeScreenController> {
                     ],
                   ),
                   onTap: () {
+                    controller.toggleBold();
                     Get.toNamed(Routes.EMAILBODY_SCREEN,arguments: arguments);
+
                   },
                 ),
               );
