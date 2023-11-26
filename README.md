@@ -86,3 +86,13 @@ lib/
  │   │   │   ├── screen_two_binding.dart
  ├── routes/
  │   ├── app_pages.dart
+
+
+## Here is the APK File 
+## App screen shots
+
+
+
+![screen (2)](https://github.com/mashudmuhd/coffee_beans_task/assets/22964110/81231cbf-8643-4eb2-b1a0-c82297c4a42f)
+![screen (1)](https://github.com/mashudmuhd/coffee_beans_task/assets/22964110/2d3f656c-ce06-4bf0-ae29-0bb246088798)
+![screen (3)](https://github.com/mashudmuhd/coffee_beans_task/assets/22964110/e74e553d-c0b3-4192-8acf-54b9e9853e8a)
